@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresa de Desarrollo de Software</title>
+    <link rel="stylesheet" href="estilos.css">
+    <!-- Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Menú de Navegación -->
+    <header>
+        <nav class="menu">
+            <!-- Ícono de menú hamburguesa -->
+            <div class="menu-icon" onclick="toggleMenu()">☰</div>
+            <!-- Lista de enlaces -->
+            <ul id="menu-list">
+                <li><a href="#"">Inicio</a></li>
+                <li><a href="./servicios.html">Servicios</a></li>
+                <li><a href="./portfolio.html">Portafolio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <!-- Contenido Principal -->
+    <main>
+        <section id="home">
+            <h1>Bienvenidos a Nuestra Empresa de Software</h1>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark text-white text-center py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">© 2024 Empresa de Software</div>
+                <div class="col-md-4">Términos y condiciones</div>
+                <div class="col-md-4">Contacto: info@empresa.com</div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script para abrir/cerrar el menú hamburguesa -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("menu-list");
+            menu.classList.toggle("active");
+        }
+    </script>
+
+</body>
+</html>

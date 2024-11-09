@@ -1,0 +1,111 @@
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+}
+
+/* Header siempre en la parte superior */
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+}
+
+/* Main ocupa el espacio restante */
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Estilo básico para el menú */
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+    background-color: #333;
+    padding: 10px 20px;
+}
+
+/* Ocultar menú hamburguesa en escritorio */
+.menu-icon {
+    display: none;
+}
+
+/* Menú horizontal para escritorio */
+.menu ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+}
+
+.menu ul li {
+    margin: 0 15px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+}
+
+.menu ul li a:hover {
+    background-color: #555;
+    color: #fff;
+}
+
+/* Estilos específicos para móviles */
+@media (max-width: 768px) {
+    /* Mostrar ícono de menú hamburguesa y ocultar menú en móviles */
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+    }
+
+    /* Ocultar menú completo en móviles */
+    .menu ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+        background-color: #333;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        z-index: 1;
+    }
+
+    /* Mostrar el menú cuando se haga clic en el ícono */
+    .menu ul.active {
+        display: flex;
+    }
+}
+
+/* Estilos adicionales para el footer */
+.footer {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.footer .col-md-4 {
+    margin-bottom: 10px;
+}
+
+/* Ajustes de responsividad para el footer */
+@media (max-width: 576px) {
+    .footer .col-md-4 {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 5px;
+    }
+}
